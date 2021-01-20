@@ -42,6 +42,6 @@ Up to any number of light sources can be used, the default being 5. Only the fir
 ![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/lighting.gif)
 
 
-## Dependancies and Other Stuff
+## Dependencies and Other Stuff
 
 The project uses [glm](https://github.com/g-truc/glm) for maths, [ImGui](https://github.com/ocornut/imgui) for the GUI and [GLFW](glfw.org) as the windowing library. GLEW was used to access OpenGL. The folder `objects` has a fair few objects to be able to play around with. Most of these were downloaded from [here](https://people.sc.fsu.edu/~jburkardt/data/obj/obj.html) and were corrected using [Meshlab](https://www.meshlab.net/).  
