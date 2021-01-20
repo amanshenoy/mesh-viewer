@@ -6,7 +6,7 @@ This application can be used to understand some basic concepts of the OpenGL pip
 
 ## Usage
 
-A sample binary has been uploaded with the repo (compiled on x86 as a 64 bit application), but its unlikely that it would generally work. To compile in a device specific manner, you can create a Makefile using `cmake` (`CMakeLists.txt` given). After creating the Makefile using cmake and compiling the project, the binary is to be used with a single command line argument - the path to the `.obj` file to display. 
+A sample binary has been uploaded with the repo (compiled on x86, as a 64 bit application), but its unlikely that it would generally work even on a system with the same configuration (try anyway, it just might). To compile in a device specific manner, you can create a Makefile using `cmake` (`CMakeLists.txt` given). After creating the Makefile using cmake and making/compiling the project, the binary is to be used with a single command line argument - the path to the `.obj` file to display. 
 
     >>> object-viewer objects/car.obj 
     
@@ -15,7 +15,7 @@ The text newlines and messages have been hardcoded for full HD resolution, but l
 ## Tweakable settings
 ### Render Mode 
 
-Once the application has been launched, the first changeable setting is of render mode (triangles, lines, points). This chooses the primitive given to the fragment shader by the rasterisation process. 
+Once the application has been launched, the first tweakable setting is of render mode (triangles, lines, points). This chooses the primitive used by the rasterisation process. 
 
 ![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/render_mode.gif)
 
@@ -44,4 +44,4 @@ Up to any number of light sources can be used, the default being 5. Only the fir
 
 ## Dependancies and Other Stuff
 
-The project uses [glm](https://github.com/g-truc/glm) for maths, [ImGui](https://github.com/ocornut/imgui) for the GUI and [GLFW](glfw.org) as the windowing library. The folder `objects` has a fair few objects to be able to play around with. Most of these were downloaded from [here](https://people.sc.fsu.edu/~jburkardt/data/obj/obj.html) and were corrected using [Meshlab](https://www.meshlab.net/).  
+The project uses [glm](https://github.com/g-truc/glm) for maths, [ImGui](https://github.com/ocornut/imgui) for the GUI and [GLFW](glfw.org) as the windowing library. GLEW was used to access OpenGL. The folder `objects` has a fair few objects to be able to play around with. Most of these were downloaded from [here](https://people.sc.fsu.edu/~jburkardt/data/obj/obj.html) and were corrected using [Meshlab](https://www.meshlab.net/).  
