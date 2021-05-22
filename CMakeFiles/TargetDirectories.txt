@@ -1,0 +1,3 @@
+/home/amanshenoy/Desktop/projects/github/object-viewer/CMakeFiles/rebuild_cache.dir
+/home/amanshenoy/Desktop/projects/github/object-viewer/CMakeFiles/edit_cache.dir
+/home/amanshenoy/Desktop/projects/github/object-viewer/CMakeFiles/object-viewer.dir

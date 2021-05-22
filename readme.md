@@ -1,8 +1,6 @@
 # Object / Mesh Viewer
 
-The following repository contains the implementation of a basic mesh/object viewer for `.obj` files. The project has been implemented in C++ using OpenGL and GLSL.
-
-This application can be used to understand some basic concepts of the OpenGL pipeline, and to understand the relevance of certain variables in an interactive manner. The project uses the typical OpenGL rendering pipeline and uses the phong lighting model for lighting calculations.   
+The following repository contains the implementation of a basic mesh/object viewer for `.obj` files. The project has been implemented in C++ using OpenGL and GLSL. This project was largely pursued to be able to get familiar with OpenGL and GLSL. The project uses the typical OpenGL rendering pipeline and uses the phong lighting model for lighting calculations.   
 
 ## Usage
 
