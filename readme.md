@@ -20,7 +20,7 @@ The text newlines and messages have been hardcoded for full HD (1920x1080) resol
 
 ## Tweakable: Render Mode 
 One of Smooth, Lines, Point Cloud, Mesh
-![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/new_render_mode.gif)
+![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/new_render_modes.gif)
 
 ## Tweakable: Reflective Properties
 Sliders for Ambient, Diffuse, Specular, Shininess (in accordance to Phong Lighting model), and a checkbox for activating RBG inputs for the above sliders
