@@ -4,39 +4,40 @@ The following repository contains the implementation of a basic mesh/object view
 
 ## Usage
 
-A sample binary has been uploaded with the repo (compiled on x86, as a 64 bit application), but its unlikely that it would generally work even on a system with the same configuration (try anyway, it just might). To compile in a device specific manner, you can create a Makefile using `cmake` (`CMakeLists.txt` given). After creating the Makefile using cmake and making/compiling the project, the binary is to be used with a single command line argument - the path to the `.obj` file to display. 
+A sample binary has been uploaded with the repo (compiled on x86, as a 64 bit application), but its unlikely that it would generally work even on a system with the same configuration (try anyway, it just might). 
 
-    >>> object-viewer objects/car.obj 
+To compile, create a directory called `build` and create Makefile using the cmake build system
+
+    mkdir build && cd build
+    cmake ..
+    make
+
+Once the project is compiled, the binary is directed to a `bin` directory, and takes the `.obj` mesh as a command line argument 
+
+    ./bin/viewer objects/bunny.obj 
     
-The text newlines and messages have been hardcoded for full HD resolution, but lower resolutions should not really be a problem.
+The text newlines and messages have been hardcoded for full HD (1920x1080) resolution, but lower resolutions should not really be a problem.
 
-## Tweakable settings
-### Render Mode 
+## Tweakable: Render Mode 
+One of Smooth, Lines, Point Cloud, Mesh
+![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/new_render_mode.gif)
 
-Once the application has been launched, the first tweakable setting is of render mode (triangles, lines, points). This chooses the primitive used by the rasterisation process. 
-
-![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/render_mode.gif)
-
-### Reflective Properties
-
-These sliders allow you to change the object reflective properties associated with the phong lighting model. It is initially assumed that all objects are white, but clicking on the 'Custom colors' checkbox, enables RGB inputs for each property.
+## Tweakable: Reflective Properties
+Sliders for Ambient, Diffuse, Specular, Shininess (in accordance to Phong Lighting model), and a checkbox for activating RBG inputs for the above sliders
 
 ![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/reflective_properties.gif)
 
-### Input devices
-
-By default the keyboard arrow keys are used for translation, and the mouse is used for rotation. This can be changed in the input devices tab. Switching one input device to translation automatically switches the other to rotation. The scroll wheel is fixed to scaling.  
-
+## Tweakable: Input devices
+Keyboard or Mouse, for Translation and Rotation (Alternate)
 ![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/input_devices.gif)
 
-### Camera
-
-For simplicity, the rotation transformation of an object has been implemented as camera movement around the object. To give the illusion of object floating, the lighting has to stay still and for this the light positions are transformed by the inverse of the modelview transformation. Apart from the mouse click and drag callbacks, this can be changed using this tab for more control. 
+## Tweakable: Camera
+Same thing as using mouse to move object around, but finer control
 ![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/camera.gif)
 
-### Lighting 
+## Tweakable: Lighting 
 
-Up to any number of light sources can be used, the default being 5. Only the first light is switched on initially and the others can be easily added by changing RGB and XYZ info appropriately in the sliders. 
+RGB and XYZ Sliders for 5 light sources, 4 of which are off by default 
 ![](https://github.com/amanshenoy/object-viewer/blob/main/demonstrations/lighting.gif)
 
 

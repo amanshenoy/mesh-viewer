@@ -173,11 +173,39 @@ void display(float& ambient_slider, float& diffuse_slider, float& specular_slide
     glUniform4fv(specularcol, 1, &specular_slider);
     glUniform1f(shininesscol, shininess_slider);
 
+    const GLfloat white[4] = {1, 1, 1, 1};
+    const GLfloat black[4] = {0, 0, 0, 0};
+
     glUniformMatrix4fv(modelviewPos, 1, GL_FALSE, &(modelview * glm::scale(mat4(1.0f), vec3(2, 2, 2)))[0][0]);
     mesh.bind();
-    if (render_mode == 0) glDrawElements(GL_TRIANGLES, mesh.objectIndices.size(), GL_UNSIGNED_INT, 0);
-    if (render_mode == 1) glDrawElements(GL_LINES, mesh.objectIndices.size(), GL_UNSIGNED_INT, 0);
-    if (render_mode == 2) glDrawElements(GL_POINTS, mesh.objectIndices.size(), GL_UNSIGNED_INT, 0);
+    if (render_mode == 0){
+        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+        glDrawElements(GL_TRIANGLES, mesh.objectIndices.size(), GL_UNSIGNED_INT, 0);
+    }
+    if (render_mode == 1){
+        glLineWidth(1); 
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        glDrawElements(GL_TRIANGLES, mesh.objectIndices.size(), GL_UNSIGNED_INT, 0);
+    } 
+    if (render_mode == 2){
+        glPointSize(2.5); 
+        glPolygonMode(GL_FRONT_AND_BACK, GL_POINT);
+        glDrawElements(GL_TRIANGLES, mesh.objectIndices.size(), GL_UNSIGNED_INT, 0);
+    } 
+    if (render_mode == 3){
+        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+        glDrawElements(GL_TRIANGLES, mesh.objectIndices.size(), GL_UNSIGNED_INT, 0);
+        glUniform4fv(diffusecol, 1, black);
+        glUniform4fv(specularcol, 1, white);
+
+        glPointSize(2.5); 
+        glPolygonMode(GL_FRONT_AND_BACK, GL_POINT);
+        glDrawElements(GL_TRIANGLES, mesh.objectIndices.size(), GL_UNSIGNED_INT, 0);
+
+        glLineWidth(2.5); 
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        glDrawElements(GL_TRIANGLES, mesh.objectIndices.size(), GL_UNSIGNED_INT, 0);
+    } 
     glBindVertexArray(0);
 }
 
@@ -252,10 +280,11 @@ int main(int argc, char* argv[]){
         ////////////////////////////////////////////////////////////////////////////////////////////////        
 
         ImGui::Separator(); ImGui::TextColored({0.0f,1.0f,1.0f,1.0f}, "Render Mode"); ImGui::Separator();
-        ImGui::Text("Primitive object "); ImGui::SameLine();
-        ImGui::RadioButton("triangles", &render_mode, 0); ImGui::SameLine();
-        ImGui::RadioButton("lines", &render_mode, 1); ImGui::SameLine();
-        ImGui::RadioButton("points", &render_mode, 2);
+        // ImGui::Text("Primitive object "); ImGui::SameLine();
+        ImGui::RadioButton("Smooth", &render_mode, 0); ImGui::SameLine();
+        ImGui::RadioButton("Lines", &render_mode, 1); ImGui::SameLine();
+        ImGui::RadioButton("Point Cloud", &render_mode, 2); ImGui::SameLine();
+        ImGui::RadioButton("Mesh", &render_mode, 3); 
 
         ////////////////////////////////////////////////////////////////////////////////////////////////        
         
