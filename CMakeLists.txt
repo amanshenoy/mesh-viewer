@@ -10,7 +10,7 @@ find_package(glfw3 3.3 REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
 
-file (GLOB source_files "${source_dir}/*.cpp" "${source_dir}/dependancies/*.cpp" "${source_dir}/dependancies/*/*.cpp")
+file (GLOB source_files "${source_dir}/*.cpp" "${source_dir}/deps/*.cpp" "${source_dir}/deps/*/*.cpp")
 
 add_executable (viewer ${source_files})
 target_link_libraries(viewer glfw)

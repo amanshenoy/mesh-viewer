@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.o"
-  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_demo.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.o"
-  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_draw.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.o"
-  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_impl_glfw.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.o"
-  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_impl_opengl3.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.o"
-  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_widgets.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.o"
+  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.o"
+  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_demo.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.o"
+  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_draw.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.o"
+  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_impl_glfw.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.o"
+  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_impl_opengl3.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.o"
+  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_tables.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.o"
+  "/home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_widgets.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.o"
   "/home/amanshenoy/Desktop/projects/github/object-viewer/src/main.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/main.cpp.o"
   "/home/amanshenoy/Desktop/projects/github/object-viewer/src/mesh.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/mesh.cpp.o"
   "/home/amanshenoy/Desktop/projects/github/object-viewer/src/shaders.cpp" "/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles/viewer.dir/src/shaders.cpp.o"

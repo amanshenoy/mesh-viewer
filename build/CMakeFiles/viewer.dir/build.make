@@ -57,87 +57,100 @@ include CMakeFiles/viewer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/viewer.dir/flags.make
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.o: CMakeFiles/viewer.dir/flags.make
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.o: ../src/dependancies/imgui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui.cpp
+CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.o: CMakeFiles/viewer.dir/flags.make
+CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.o: ../src/deps/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui.cpp
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui.cpp > CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.i
+CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui.cpp > CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.i
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui.cpp -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.s
+CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui.cpp -o CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.s
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.o: CMakeFiles/viewer.dir/flags.make
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.o: ../src/dependancies/imgui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_demo.cpp
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.o: CMakeFiles/viewer.dir/flags.make
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.o: ../src/deps/imgui/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_demo.cpp
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_demo.cpp > CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.i
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_demo.cpp > CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.i
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_demo.cpp -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.s
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_demo.cpp -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.s
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.o: CMakeFiles/viewer.dir/flags.make
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.o: ../src/dependancies/imgui/imgui_draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_draw.cpp
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.o: CMakeFiles/viewer.dir/flags.make
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.o: ../src/deps/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_draw.cpp
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_draw.cpp > CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.i
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_draw.cpp > CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.i
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_draw.cpp -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.s
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_draw.cpp -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.s
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/viewer.dir/flags.make
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.o: ../src/dependancies/imgui/imgui_impl_glfw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_impl_glfw.cpp
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/viewer.dir/flags.make
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.o: ../src/deps/imgui/imgui_impl_glfw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_impl_glfw.cpp
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_impl_glfw.cpp > CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.i
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_impl_glfw.cpp > CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.i
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_impl_glfw.cpp -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.s
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_impl_glfw.cpp -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.s
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/viewer.dir/flags.make
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.o: ../src/dependancies/imgui/imgui_impl_opengl3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_impl_opengl3.cpp
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/viewer.dir/flags.make
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.o: ../src/deps/imgui/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_impl_opengl3.cpp
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_impl_opengl3.cpp > CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.i
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_impl_opengl3.cpp > CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.i
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.s
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.s
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.o: CMakeFiles/viewer.dir/flags.make
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.o: ../src/dependancies/imgui/imgui_widgets.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_widgets.cpp
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.o: CMakeFiles/viewer.dir/flags.make
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.o: ../src/deps/imgui/imgui_tables.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_tables.cpp
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_widgets.cpp > CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.i
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_tables.cpp > CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.i
 
-CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/dependancies/imgui/imgui_widgets.cpp -o CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.s
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_tables.cpp -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.s
+
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.o: CMakeFiles/viewer.dir/flags.make
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.o: ../src/deps/imgui/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_widgets.cpp
+
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_widgets.cpp > CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.i
+
+CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amanshenoy/Desktop/projects/github/object-viewer/src/deps/imgui/imgui_widgets.cpp -o CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.s
 
 CMakeFiles/viewer.dir/src/main.cpp.o: CMakeFiles/viewer.dir/flags.make
 CMakeFiles/viewer.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/viewer.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/viewer.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/main.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/main.cpp
 
 CMakeFiles/viewer.dir/src/main.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/viewer.dir/src/main.cpp.s: cmake_force
 
 CMakeFiles/viewer.dir/src/mesh.cpp.o: CMakeFiles/viewer.dir/flags.make
 CMakeFiles/viewer.dir/src/mesh.cpp.o: ../src/mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/viewer.dir/src/mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/viewer.dir/src/mesh.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/mesh.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/mesh.cpp
 
 CMakeFiles/viewer.dir/src/mesh.cpp.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/viewer.dir/src/mesh.cpp.s: cmake_force
 
 CMakeFiles/viewer.dir/src/shaders.cpp.o: CMakeFiles/viewer.dir/flags.make
 CMakeFiles/viewer.dir/src/shaders.cpp.o: ../src/shaders.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/viewer.dir/src/shaders.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/viewer.dir/src/shaders.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/shaders.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/shaders.cpp
 
 CMakeFiles/viewer.dir/src/shaders.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/viewer.dir/src/shaders.cpp.s: cmake_force
 
 CMakeFiles/viewer.dir/src/transform.cpp.o: CMakeFiles/viewer.dir/flags.make
 CMakeFiles/viewer.dir/src/transform.cpp.o: ../src/transform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/viewer.dir/src/transform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/viewer.dir/src/transform.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/viewer.dir/src/transform.cpp.o -c /home/amanshenoy/Desktop/projects/github/object-viewer/src/transform.cpp
 
 CMakeFiles/viewer.dir/src/transform.cpp.i: cmake_force
@@ -189,12 +202,13 @@ CMakeFiles/viewer.dir/src/transform.cpp.s: cmake_force
 
 # Object files for target viewer
 viewer_OBJECTS = \
-"CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.o" \
-"CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.o" \
-"CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.o" \
-"CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.o" \
-"CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.o" \
-"CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.o" \
+"CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.o" \
+"CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.o" \
+"CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.o" \
+"CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.o" \
+"CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.o" \
+"CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.o" \
+"CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.o" \
 "CMakeFiles/viewer.dir/src/main.cpp.o" \
 "CMakeFiles/viewer.dir/src/mesh.cpp.o" \
 "CMakeFiles/viewer.dir/src/shaders.cpp.o" \
@@ -203,12 +217,13 @@ viewer_OBJECTS = \
 # External object files for target viewer
 viewer_EXTERNAL_OBJECTS =
 
-../bin/viewer: CMakeFiles/viewer.dir/src/dependancies/imgui/imgui.cpp.o
-../bin/viewer: CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_demo.cpp.o
-../bin/viewer: CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_draw.cpp.o
-../bin/viewer: CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_glfw.cpp.o
-../bin/viewer: CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_impl_opengl3.cpp.o
-../bin/viewer: CMakeFiles/viewer.dir/src/dependancies/imgui/imgui_widgets.cpp.o
+../bin/viewer: CMakeFiles/viewer.dir/src/deps/imgui/imgui.cpp.o
+../bin/viewer: CMakeFiles/viewer.dir/src/deps/imgui/imgui_demo.cpp.o
+../bin/viewer: CMakeFiles/viewer.dir/src/deps/imgui/imgui_draw.cpp.o
+../bin/viewer: CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_glfw.cpp.o
+../bin/viewer: CMakeFiles/viewer.dir/src/deps/imgui/imgui_impl_opengl3.cpp.o
+../bin/viewer: CMakeFiles/viewer.dir/src/deps/imgui/imgui_tables.cpp.o
+../bin/viewer: CMakeFiles/viewer.dir/src/deps/imgui/imgui_widgets.cpp.o
 ../bin/viewer: CMakeFiles/viewer.dir/src/main.cpp.o
 ../bin/viewer: CMakeFiles/viewer.dir/src/mesh.cpp.o
 ../bin/viewer: CMakeFiles/viewer.dir/src/shaders.cpp.o
@@ -221,7 +236,7 @@ viewer_EXTERNAL_OBJECTS =
 ../bin/viewer: /usr/lib/x86_64-linux-gnu/libGLX.so
 ../bin/viewer: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 ../bin/viewer: CMakeFiles/viewer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../bin/viewer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amanshenoy/Desktop/projects/github/object-viewer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ../bin/viewer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/viewer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -14,9 +14,9 @@
 #include "transform.h"
 #include "mesh.h"
 
-#include "dependancies/imgui/imgui.h"
-#include "dependancies/imgui/imgui_impl_glfw.h"
-#include "dependancies/imgui/imgui_impl_opengl3.h"
+#include "deps/imgui/imgui.h"
+#include "deps/imgui/imgui_impl_glfw.h"
+#include "deps/imgui/imgui_impl_opengl3.h"
         
 #define MAINPROGRAM 
 #include "globals.h" 
@@ -259,6 +259,7 @@ int main(int argc, char* argv[]){
 
     previous_y_position = 0;
     previous_x_position = 0;
+    render_mode = 3;
 
     current_vp_width = 1920/4;
     current_vp_height = 1080; 
