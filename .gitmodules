@@ -4,3 +4,6 @@
 [submodule "imgui"]
         path = src/deps/imgui
         url = https://github.com/ocornut/imgui
+[submodule "src/deps/glfw"]
+	path = src/deps/glfw
+	url = git@github.com:glfw/glfw.git
