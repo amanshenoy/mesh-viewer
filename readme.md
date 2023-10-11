@@ -2,7 +2,14 @@
 
 The following repository contains the implementation of a basic mesh/object viewer for `.obj` files. The project has been implemented in C++ using OpenGL and GLSL. This project was largely pursued to be able to get familiar with OpenGL and GLSL. The project uses the typical OpenGL rendering pipeline and uses the phong lighting model for lighting calculations.   
 
+## Submodules 
+
+`cd src\deps; git submodule add git@github.com:glfw/glfw.it glfw`
+
 ## Usage
+
+### Run
+` .\bin\Release\viewer.exe .\data\car.obj`
 
 A sample binary has been uploaded with the repo (compiled on x86, as a 64 bit application), but its unlikely that it would generally work even on a system with the same configuration (try anyway, it just might). 
 
