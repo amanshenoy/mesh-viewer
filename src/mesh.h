@@ -26,3 +26,4 @@ public:
     inline void bind(){glBindVertexArray(vertex_array);}
 };
 }
+

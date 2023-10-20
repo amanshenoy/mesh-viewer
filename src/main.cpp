@@ -139,6 +139,7 @@ void initialise_shader_and_mesh(){
 
     // Initialize global mesh
     mesh.generate_buffers();
+    // read the mesh file (obj and mesh file)
     mesh.parse_and_bind();   
 }
 

@@ -22,46 +22,103 @@ void Mesh::destroy_buffers(){
 
 void Mesh::parse_and_bind(){
 	FILE* fp;
-	float x, y, z;
-	int fx, fy, fz, ignore;
-	int c1, c2;
+	// fp >> 
 	float minY = INFINITY, minZ = INFINITY;
 	float maxY = -INFINITY, maxZ = -INFINITY;
-
+	// judge the extension
+	std::string extension = object_path.substr(object_path.find_last_of(".") + 1);
 	fp = fopen(object_path.c_str(), "rb");
-	if (fp == NULL){
+	// Error loading file
+	if (fp == NULL) {
 		std::cerr << "Error loading file: " << object_path << "; probably does not exist" << std::endl;
 		exit(-1);
 	}
-
-	while (!feof(fp)){
-		c1 = fgetc(fp);
-		while (!(c1 == 'v' || c1 == 'f')) {
-			c1 = fgetc(fp);
-			if (feof(fp))
-				break;
+	// open the file with obj extension
+	if (extension == "obj")
+	{
+		float x, y, z;
+		int fx, fy, fz, ignore;
+		int c1, c2;
+		
+		//
+		while (!feof(fp)) { // This loop continues until the end of the file (EOF) is reached.
+			c1 = fgetc(fp); // get the first character of the line
+			while (!(c1 == 'v' || c1 == 'f')) {
+				c1 = fgetc(fp);
+				if (feof(fp))
+					break;
+			}
+			// c2 == 'v' or c2 == 'f'
+			c2 = fgetc(fp);
+			if ((c1 == 'v') && (c2 == ' ')) {
+				// scan the 3 floating number and scan it to x,y and z.
+				fscanf(fp, "%f %f %f", &x, &y, &z);
+				objectVertices.push_back(vec3(x, y, z));
+				if (y < minY) minY = y;
+				if (z < minZ) minZ = z;
+				if (y > maxY) maxY = y;
+				if (z > maxZ) maxZ = z;
+			}
+			else if ((c1 == 'v') && (c2 == 'n')) {
+				// the normal information 
+				fscanf(fp, "%f %f %f", &x, &y, &z);
+				objectNormals.push_back(glm::normalize(vec3(x, y, z)));
+			}
+			else if (c1 == 'f') {
+				// the face information, depends on the format of the obj file.
+				fscanf(fp, "%d//%d %d//%d %d//%d", &fx, &ignore, &fy, &ignore, &fz, &ignore);
+				objectIndices.push_back(fx - 1);
+				objectIndices.push_back(fy - 1);
+				objectIndices.push_back(fz - 1);
+			}
 		}
-		c2 = fgetc(fp);
-		if ((c1 == 'v') && (c2 == ' ')) {
-			fscanf(fp, "%f %f %f", &x, &y, &z);
+	}
+	// mesh extension
+	else if (extension == "mesh" || extension == "gmsh")
+	{
+		int numVertices, numTriangles;
+		//int vertexId, faceId;
+		float x, y, z;
+		char keyword[50]; // for section keywords
+
+		// Skip headers until Vertices
+		while (fscanf(fp, "%s", keyword) && strcmp(keyword, "Vertices") != 0) {}
+
+		fscanf(fp, "%d", &numVertices);
+		for (int i = 0; i < numVertices; ++i) {
+			fscanf(fp, " %f %f %f", &x, &y, &z);
 			objectVertices.push_back(vec3(x, y, z));
+			float normal_x = 0.0;
+			float normal_y = 0.0;
+			float normal_z = 1.0;
+			// here I assume every vertex has normal (0,0,1), the actual normal where be computed after introduced the openmesh structure
+			objectNormals.push_back(glm::normalize(vec3(normal_x, normal_y, normal_z)));
 			if (y < minY) minY = y;
 			if (z < minZ) minZ = z;
 			if (y > maxY) maxY = y;
 			if (z > maxZ) maxZ = z;
 		}
-		else if ((c1 == 'v') && (c2 == 'n')) {
-			fscanf(fp, "%f %f %f", &x, &y, &z);
-			objectNormals.push_back(glm::normalize(vec3(x, y, z)));
+
+		// Skip sections until Triangles
+		while (fscanf(fp, "%s", keyword) && strcmp(keyword, "Triangles") != 0) {
+			continue;
 		}
-		else if (c1 == 'f'){
-			fscanf(fp, "%d//%d %d//%d %d//%d", &fx, &ignore, &fy, &ignore, &fz, &ignore);
-			objectIndices.push_back(fx - 1);
-			objectIndices.push_back(fy - 1);
-			objectIndices.push_back(fz - 1);
+
+		fscanf(fp, "%d", &numTriangles);
+		int v1, v2, v3;
+		for (int i = 0; i < numTriangles; ++i) {
+			fscanf(fp, "% d % d % d", &v1, &v2, &v3);
+			objectIndices.push_back(v1 - 1); // Assuming indices in the mesh file are 1-based
+			objectIndices.push_back(v2 - 1);
+			objectIndices.push_back(v3 - 1);
 		}
 	}
-	fclose(fp); 
+	else {
+		std::cerr << "Unsupported file format: " << extension << std::endl;
+		exit(-1);
+	}
+	fclose(fp); // close the document
+	// adjust the vertex position 
 	float avgY = (minY + maxY) / 2.0f - 0.02f;
 	float avgZ = (minZ + maxZ) / 2.0f;
 	for (unsigned int i = 0; i < objectVertices.size(); ++i) {
@@ -89,4 +146,5 @@ void Mesh::parse_and_bind(){
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindVertexArray(0);
 }
+
 }
